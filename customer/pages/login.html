@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--basic template-->
+    <meta charset="utf-8">
+    <meta name="Description" content="Workshop 2 UTeM">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <!--declaration for css & js-->
+    <!-- akmalsab edit -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <img src="../img/logo.png" alt="companyLogo" width="250" height="250">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <p class="h1 d-none d-sm-none d-md-block d-lg-block d-xl-block">Xmobile Online Gadget Store</p>
+                <p class="h3 d-sm-block d-md-none d-lg-none d-xl-none">Xmobile Online Gadget Store</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col align-items-center justify-content-center">
+                <form action="../verifyLogin.php" method="POST">
+                    <div class="form-group">
+                        <label for="CustomerUsername">Username:</label>
+                        <input id="CustomerUsername" type="text" class="form-control" name="username" required autofocus="on" placeholder="insert your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPassword">Password:</label>
+                        <input id="customerPassword" type="password" class="form-control" name="password" required placeholder="insert your password">
+                    </div>
+                    <div class="form-group">
+                        <label for="forgotPassword" class="align-content-start"><a href="forgotPassword.html">Forgot Password?</a></label>                            
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <button type="reset" class="btn btn-secondary btn-block">Reset</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <label for="signUp" class="align-content-end"><a href="registration.html"><u>New here? Sign up</u></a></label>
+                            </div>
+                            <div class="col">
+                                <label for="signUp" class="align-content-end float-right"><a href="../index.php"><u>Home</u></a></label>
+                            </div>
+                        </div>
+                    </div>                    
+                </form>                  
+            </div>
+        </div>
+    </div>
+</body>        
+</html>

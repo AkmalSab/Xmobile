@@ -1,0 +1,19 @@
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.form-control:valid ~ .show{
+  display: block;
+}
+.col span{
+  color: #222;
+  width: 40px;
+  margin-top: -25px;
+  margin-left: 90px;
+}
